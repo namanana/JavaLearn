@@ -46,14 +46,14 @@
 			Java虚拟机(Java Virtual Machine)
 	
 	// Java程序运行的两大核心机制
-		Java虚拟机 (JVM)
+		Java虚拟机 (JVM, Java Virtal Machine)
 			JVM是一个虚拟的计算机，具有指令集并使用不同的存储区域。
 			负责执行指令，管理数据、内存、寄存器。
 			用于运行Java程序
 			一次编译，到处运行
-		垃圾回收
+		垃圾回收 (Garbage Collection)
 			Java不需要程序员负责回收无用的内存
-			程序员无法精确控制和干预
+			垃圾回收在Java程序运行过程中自动进行，程序员无法精确控制和干预
 	// Java语言的特点
 		面向对象
 			两个基本概念：类、对象
@@ -85,28 +85,28 @@
 		特点：所有字母都是小写
 			// 定义数据类型
 			class	enum 	byte	short
-			int		long	float	double 	char 
+			int	long	float	double 	char 
 			boolean void	interface 
 			// 定义数据类型
 			true 	false 	null
 			// 定义流程控制
-			if 		else	switch	case	default
-			while	do 		for		break 	continue
+			if 	else	switch	case	default
+			while	do 	for	break 	continue
 			return
 			// 定义访问权限修饰符
 			private		protected	public
 			// 定义类、函数、变量修饰符
-			abstract	final		static 	synchronized
+			abstract	final		static 		synchronized
 			// 定义类与类之间关系
 			extends		implements
 			// 定义建立实例及引用实例，判断实例
 			new 	this 	super	instanceof
 			// 用于异常处理
-			try 	catch 	finally 	throw 	throws
+			try 	catch 	finally    throw    throws
 			// 用于包
 			packages	import
 			// 其他修饰符关键字
-			native 	strictfp 	transient 	volatile 	assert
+			native 		strictfp 	transient 	volatile 	assert
 	
 	/* 标识符 */
 		对各种变量、方法和类等要素命名时使用的字符序列称为标识符
@@ -145,22 +145,22 @@
 			"按位置划分"
 				成员变量
 				局部变量
-				注意：类外面不能声明变量
+！			       注意：类外面不能声明变量
 			" 按所属数据类型划分 "
 				基本数据类型变量 （直接放入栈中，栈内存中放的是堆内存的首地址）
 					数值型 
-						整数 byte	short 	int 	long
+						整数	byte	short 	int 	long
 						'byte: -128~127'
-						浮点 float	double
+						浮点 	float	double
 						'浮点型默认为double'
 						'float f = 12.35: ERROR! 损失精度,不能把double型直接赋值给float'
 						'float f = 12.35F'
-					字符型 	 char 
+					字符型 	char 
 						'可以使用转义字符'
-					布尔型	 boolean 
+					布尔型	boolean 
 						' 不能使用 0、1 代替true  '
 				引用数据类型变量（放入堆内存中）
-					类		class 
+					类	 class 
 						'字符串'
 					接口	interface 
 					数组	([]) 
